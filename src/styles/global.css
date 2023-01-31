@@ -1,0 +1,8 @@
+:root {
+  --background_switch: black;
+  --accent: pink;
+}
+
+body {
+  margin: 0;
+}
