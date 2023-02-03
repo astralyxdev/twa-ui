@@ -1,5 +1,5 @@
 {
-  "name": "@twa-ui",
+  "name": "twa-ui",
   "version": "0.0.1",
   "description": "Telegram Web Apps UI kit",
   "main": "dist/index.js",
