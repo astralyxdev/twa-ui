@@ -1,6 +1,6 @@
 {
   "name": "twa-ui",
-  "version": "2.0.0",
+  "version": "0.0.1-alpha",
   "description": "Telegram Web Apps UI kit",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
