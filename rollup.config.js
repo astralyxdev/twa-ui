@@ -9,6 +9,8 @@ import svgr from "@svgr/rollup";
 import babel from "@rollup/plugin-babel";
 import replace from "@rollup/plugin-replace";
 
+import copy from "rollup-plugin-copy";
+
 import pkg from "./package.json";
 
 export default {
@@ -49,6 +51,18 @@ export default {
     }),
     replace({
       "process.env.NODE_ENV": JSON.stringify("development"),
+    }),
+    copy({
+      targets: [
+        {
+          src: [
+            "./src/styles/fonts/SFCompactRounded-Ultralight.eot",
+            "./src/styles/fonts/SFCompactRounded-Ultralight.woff",
+            "./src/styles/fonts/SFCompactRounded-Ultralight.woff2",
+          ],
+          dest: "dist",
+        },
+      ],
     }),
   ],
 };
