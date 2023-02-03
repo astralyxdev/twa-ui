@@ -1,7 +1,5 @@
 ._wrapper {
   position: relative;
-  border-radius: var(--border_radius);
-  overflow: hidden;
   display: inline-block;
 
   max-width: 100%;
@@ -16,6 +14,9 @@
   border: none;
 
   width: 100%;
+
+  border-radius: var(--border_radius);
+  overflow: hidden;
 }
 
 ._content {

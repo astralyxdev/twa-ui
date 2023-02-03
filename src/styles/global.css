@@ -19,6 +19,47 @@ span {
   font-family: var(--font_medium);
 }
 
+body[scheme="tg"] {
+  /* ? Switch.component.tsx */
+  --switch_inactive_background: rgba(255, 255, 255, 0.1);
+  --switch_active_background: var(--tg-theme-link-color);
+
+  --switch_inactive_slider_background: #222431;
+  --switch_active_slider_background: #222431;
+
+  /* ? TextArea.component.tsx */
+  --textarea_background: var(--tg-theme-bg-color);
+
+  /* ? Button.component.tsx */
+  --button_primary_background: var(--tg-theme-button-color);
+  --button_secondary_background: var(--tg-theme-bg-color);
+  --button_disabled_background: rgba(255, 255, 255, 0.05);
+
+  --button_primary_text_color: var(--tg-theme-text-color);
+  --button_secondary_text_color: var(--tg-theme-button-text-color);
+
+  /* ? Cell.component.tsx */
+  --cell_background: var(--tg-theme-bg-color);
+
+  /* ? Avatar.component.tsx */
+  --avatar_border_radius: 24px;
+  --avatar_fallback_background: var(--tg-theme-link-color);
+
+  /* ? Separator.component.tsx */
+  --separator_background: rgba(255, 255, 255, 0.05);
+
+  /* ? common */
+  --text_primary: var(--tg-theme-text-color);
+  --text_secondary: var(--tg-theme-hint-color);
+  --text_accent: var(--tg-theme-link-color);
+
+  --accent: var(--tg-theme-link-color);
+
+  --background_color: var(--tg-theme-secondary-bg-color);
+
+  --border_radius: 10px;
+}
+
 body[scheme="dark"] {
   /* ? Switch.component.tsx */
   --switch_inactive_background: rgba(255, 255, 255, 0.1);
