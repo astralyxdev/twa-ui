@@ -1,0 +1,26 @@
+._wrapper {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 8px 16px;
+}
+
+._content,
+._after {
+  flex: 1 1;
+  display: flex;
+
+  letter-spacing: 0.06em;
+}
+
+._content {
+  justify-content: flex-start;
+  color: var(--text_primary);
+}
+
+._after {
+  justify-content: flex-end;
+  color: var(--text_accent);
+}

@@ -1,8 +1,61 @@
 :root {
-  --background_switch: black;
-  --accent: pink;
+  --font_medium: "SF Compact Rounded Medium";
+  --panel_padding: 20px;
 }
 
 body {
   margin: 0;
+
+  background-color: var(--background_color);
+}
+
+html,
+body,
+#app {
+  min-height: 100vh;
+}
+
+span {
+  font-family: var(--font_medium);
+}
+
+body[scheme="dark"] {
+  /* ? Switch.component.tsx */
+  --switch_inactive_background: rgba(255, 255, 255, 0.1);
+  --switch_active_background: #6ddbb8;
+
+  --switch_inactive_slider_background: #222431;
+  --switch_active_slider_background: #222431;
+
+  /* ? TextArea.component.tsx */
+  --textarea_background: #222431;
+
+  /* ? Button.component.tsx */
+  --button_primary_background: #6ddbb8;
+  --button_secondary_background: #222431;
+  --button_disabled_background: rgba(255, 255, 255, 0.05);
+
+  --button_primary_text_color: #222431;
+  --button_secondary_text_color: #ffffff;
+
+  /* ? Cell.component.tsx */
+  --cell_background: #222431;
+
+  /* ? Avatar.component.tsx */
+  --avatar_border_radius: 24px;
+  --avatar_fallback_background: #4066ef;
+
+  /* ? Separator.component.tsx */
+  --separator_background: rgba(255, 255, 255, 0.05);
+
+  /* ? common */
+  --text_primary: #e2e2e4;
+  --text_secondary: #9898ae;
+  --text_accent: #6ddbb8;
+
+  --accent: #6ddbb8;
+
+  --background_color: #1d1f2a;
+
+  --border_radius: 10px;
 }

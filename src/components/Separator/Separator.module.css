@@ -1,0 +1,11 @@
+._wrapper {
+  background-color: var(--cell_background);
+  width: 100%;
+}
+
+._wrapper_in {
+  margin: 0 16px;
+  background-color: var(--separator_background);
+  width: calc(100% - 32px);
+  height: 1px;
+}

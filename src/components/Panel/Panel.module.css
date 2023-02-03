@@ -1,0 +1,5 @@
+._wrapper {
+  padding: var(--panel_padding);
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,103 @@
+._wrapper {
+  position: relative;
+  border-radius: var(--border_radius);
+  overflow: hidden;
+  display: inline-block;
+
+  max-width: 100%;
+}
+
+._wrapper:not(._disabled) ._wrapper_in {
+  cursor: pointer;
+}
+
+._wrapper_in {
+  outline: none;
+  border: none;
+
+  width: 100%;
+}
+
+._content {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+}
+
+._before {
+}
+
+._content_in {
+}
+
+._after {
+}
+
+._before,
+._after {
+  display: flex;
+}
+
+._stretched {
+  flex: 1 1;
+}
+
+._with_hover {
+}
+
+._with_active {
+}
+
+._wrapper._disabled ._wrapper_in {
+  background: var(--button_disabled_background);
+}
+
+._wrapper._disabled ._wrapper_in ._content_in {
+  color: var(--button_secondary_text_color);
+  opacity: 0.5;
+}
+
+._mode_primary ._wrapper_in {
+  background: var(--button_primary_background);
+}
+
+._mode_primary ._wrapper_in ._content_in {
+  color: var(--button_primary_text_color);
+}
+
+._mode_secondary ._wrapper_in {
+  background: var(--button_secondary_background);
+}
+
+._mode_secondary ._wrapper_in ._content_in {
+  color: var(--button_secondary_text_color);
+}
+
+._sz_s {
+}
+
+._sz_m {
+}
+
+._sz_l {
+}
+
+._sz_l ._wrapper_in {
+  padding: 11px 16px;
+}
+
+._sz_l ._content {
+  min-height: 20px;
+}
+
+._position_start ._content {
+  justify-content: flex-start;
+}
+
+._position_center ._content {
+  justify-content: center;
+}
+
+._position_end ._content {
+  justify-content: flex-end;
+}

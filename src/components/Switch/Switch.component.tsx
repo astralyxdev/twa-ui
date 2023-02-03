@@ -11,7 +11,7 @@ export const Switch: FC<SwitchProps> = ({
   className = "",
   onChange = () => {},
 }) => {
-  const [isChecked, setIsChecked] = useState(checked);
+  const [isChecked, setIsChecked] = useState<boolean>(checked);
 
   const onCheckBoxChange = (e: ChangeEvent<HTMLInputElement>) => {
     const isChecked = e.currentTarget.checked;
@@ -34,7 +34,11 @@ export const Switch: FC<SwitchProps> = ({
         checked={isChecked}
         onChange={onCheckBoxChange}
       />
-      <span className={styles._slider} />
+      <span
+        className={cx(styles._slider, {
+          [styles._slider_active]: isChecked,
+        })}
+      />
     </label>
   );
 };

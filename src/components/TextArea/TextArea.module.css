@@ -1,0 +1,24 @@
+._content {
+  background: var(--textarea_background);
+  color: var(--text_primary);
+
+  resize: none;
+
+  outline: none;
+  border: none;
+
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.06em;
+
+  padding: 14px 16px;
+  height: 111px;
+
+  border-radius: var(--border_radius);
+  font-family: var(--font_medium);
+}
+
+._content._with_resize {
+  resize: both;
+}
