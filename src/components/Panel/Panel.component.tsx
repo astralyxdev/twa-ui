@@ -1,11 +1,11 @@
-import React, { FC } from "react";
+import React from "react";
 import cx from "classnames";
 
 import { PanelProps } from "./Panel.types";
 
 import styles from "./Panel.module.css";
 
-export const Panel: FC<PanelProps> = ({
+export const Panel: React.FC<PanelProps> = ({
   padding,
   children,
   className = "",

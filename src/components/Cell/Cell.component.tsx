@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import cx from "classnames";
 
 import { Text } from "../Text";
@@ -7,7 +7,7 @@ import { CellProps } from "./Cell.types";
 
 import styles from "./Cell.module.css";
 
-export const Cell: FC<CellProps> = ({
+export const Cell: React.FC<CellProps> = ({
   before,
   children,
   description,

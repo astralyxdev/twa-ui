@@ -1,19 +1,19 @@
-import React, { ChangeEvent, FC, useState } from "react";
+import React from "react";
 import cx from "classnames";
 
 import styles from "./Switch.module.css";
 import { SwitchProps } from "./Switch.types";
 
-export const Switch: FC<SwitchProps> = ({
+export const Switch: React.FC<SwitchProps> = ({
   disabled,
   style = {},
   checked = false,
   className = "",
   onChange = () => {},
 }) => {
-  const [isChecked, setIsChecked] = useState<boolean>(checked);
+  const [isChecked, setIsChecked] = React.useState<boolean>(checked);
 
-  const onCheckBoxChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const onCheckBoxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const isChecked = e.currentTarget.checked;
 
     setIsChecked(isChecked);

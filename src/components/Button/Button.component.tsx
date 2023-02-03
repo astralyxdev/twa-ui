@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import cx from "classnames";
 
 import { ButtonProps } from "./Button.types";
@@ -6,7 +6,7 @@ import { ButtonProps } from "./Button.types";
 import styles from "./Button.module.css";
 import { Text } from "../Text";
 
-export const Button: FC<ButtonProps> = ({
+export const Button: React.FC<ButtonProps> = ({
   disabled,
   before,
   after,

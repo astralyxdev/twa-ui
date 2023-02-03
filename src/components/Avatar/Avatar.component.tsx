@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from "react";
+import React from "react";
 import cx from "classnames";
 
 import { Text } from "../Text";
@@ -7,20 +7,20 @@ import { AvatarProps } from "./Avatar.types";
 
 import styles from "./Avatar.module.css";
 
-export const Avatar: FC<AvatarProps> = ({
+export const Avatar: React.FC<AvatarProps> = ({
   src,
   alt,
   size = 24,
   fallbackName = "",
   className = "",
 }) => {
-  const [isAvatarLoadError, setIsAvatarLoadError] = useState(!src);
+  const [isAvatarLoadError, setIsAvatarLoadError] = React.useState(!src);
 
   const onAvatarLoadFailed = () => {
     setIsAvatarLoadError(true);
   };
 
-  useEffect(() => {
+  React.useEffect(() => {
     setIsAvatarLoadError(!src);
   }, [src]);
 

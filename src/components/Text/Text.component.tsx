@@ -1,9 +1,9 @@
-import React, { FC } from "react";
+import React from "react";
 import cx from "classnames";
 
 import { TextProps } from "./Text.types";
 
-export const Text: FC<TextProps> = ({
+export const Text: React.FC<TextProps> = ({
   weight = "",
   size,
   lineHeight,

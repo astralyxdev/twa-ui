@@ -1,5 +1,5 @@
 {
-  "include": ["src/**/*.ts*", "src/**/*.js", "*.config.js", ".eslintrc.js"],
+  "include": ["src/**/*.ts*", "src/**/*.js", ".eslintrc.js"],
   "files": ["./custom.d.ts"],
   "compilerOptions": {
     "allowJs": true,

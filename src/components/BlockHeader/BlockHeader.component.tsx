@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import cx from "classnames";
 
 import { Text } from "../Text";
@@ -7,7 +7,7 @@ import { BlockHeaderProps } from "./BlockHeader.types";
 
 import styles from "./BlockHeader.module.css";
 
-export const BlockHeader: FC<BlockHeaderProps> = ({
+export const BlockHeader: React.FC<BlockHeaderProps> = ({
   children,
   after,
   className = "",
