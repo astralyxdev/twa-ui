@@ -12,6 +12,7 @@ import replace from "@rollup/plugin-replace";
 import pkg from "./package.json";
 
 export default {
+  external: ["react", "react-dom", "react/jsx-runtime"],
   input: "src/index.tsx",
   output: [
     {
