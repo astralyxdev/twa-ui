@@ -48,6 +48,9 @@ body[scheme="tg"] {
   /* ? Separator.component.tsx */
   --separator_background: rgba(255, 255, 255, 0.05);
 
+  /* ? Input.component.tsx */
+  --input_background: var(--tg-theme-bg-color);
+
   /* ? common */
   --text_primary: var(--tg-theme-text-color);
   --text_secondary: var(--tg-theme-hint-color);
@@ -88,6 +91,9 @@ body[scheme="dark"] {
 
   /* ? Separator.component.tsx */
   --separator_background: rgba(255, 255, 255, 0.05);
+
+  /* ? Input.component.tsx */
+  --input_background: #222431;
 
   /* ? common */
   --text_primary: #e2e2e4;

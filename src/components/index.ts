@@ -8,3 +8,4 @@ export * from "./Cell";
 export * from "./BlockHeader";
 export * from "./Panel";
 export * from "./Separator";
+export * from "./Input";

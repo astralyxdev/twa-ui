@@ -1,0 +1,29 @@
+._wrapper {
+  padding: 11px 16px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.06em;
+
+  min-height: 20px;
+
+  outline: none;
+  border: none;
+
+  border-radius: var(--border_radius);
+  overflow: hidden;
+
+  background: var(--input_background);
+  color: var(--text_primary);
+}
+
+._mp_start {
+  border-radius: var(--border_radius) var(--border_radius) 0 0;
+}
+
+._mp_center {
+  border-radius: 0;
+}
+
+._mp_end {
+  border-radius: 0 0 var(--border_radius) var(--border_radius);
+}
