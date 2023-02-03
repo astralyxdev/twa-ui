@@ -6,6 +6,9 @@ import resolve from "rollup-plugin-node-resolve";
 import url from "rollup-plugin-url";
 import svgr from "@svgr/rollup";
 
+import babel from "@rollup/plugin-babel";
+import replace from "@rollup/plugin-replace";
+
 import pkg from "./package.json";
 
 export default {
@@ -40,5 +43,11 @@ export default {
       clean: true,
     }),
     commonjs(),
+    babel({
+      presets: ["@babel/preset-react"],
+    }),
+    replace({
+      "process.env.NODE_ENV": JSON.stringify("development"),
+    }),
   ],
 };
